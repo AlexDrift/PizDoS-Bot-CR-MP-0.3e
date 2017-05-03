@@ -1,0 +1,4 @@
+#include <windows.h>
+#include "resource.h"
+
+IDI_MAIN ICON "Pr0ject Bots v0.2.ico"

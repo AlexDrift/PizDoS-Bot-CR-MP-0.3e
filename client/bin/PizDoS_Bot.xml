@@ -1,0 +1,73 @@
+<!-- Remember to add samp.dll and bass.dll :-) !-->
+
+<!--
+Avalable runmodes:
+	0 = RCON mode,
+	1 = Bare mode (doesn't spawn),
+	2 = Still mode (stays still at spawn position),
+	3 = Normal mode (stays still at a position),
+	4 = Follows a player,
+	5 = Follows a player with a vehicle,
+	6 = Mode for playing routes,
+-->
+
+<PizDoS_Bot console="0" runmode="1" autorun="0" find="0" select_classid="3"
+			   print_timestamps="0" chatcolor_rgb="0 0 160" clientmsg_rgb="0 160 0"
+			   followplayer="Danny_Lee" followplayerq="Danny_Lee" followplayerwithvehicleid="243" followXOffset="3.0" followYOffset="0.0" followZOffset="0.0"
+			   imitatechat="AlexDrift">
+
+	<!-- The first one is the one it will connect to -->
+	<server nickname="Anatol_Padzalupenko" password="bWFyMjube347YKPlWbZe+oVf9pD570+iT0KmVN3lyJan25OFrwjpmKLWbCxJ3N7jlcdVWqIST7SQr9VgKBYuBQKI1XzedDyCFdBH7QMaLyxQC3cHMK+feKruCojzBgC0A6Iq9m/+y8qfRXhREu8QO2L6FR1et0lVH5t7fhube34bk33GpSCU0cEhLGc9TFBUcM+29oYMRBYhyme5JAyi/Df8kqZ69ecbe882">77.220.180.124:7777</server>
+
+
+	<!-- If in normal mode, stay still at... -->
+	<normal_pos position="-1953.48, 262.31, 41.12" rotation="0.0" />
+
+	<!-- If in playing routes mode, go to a position to get near by vehicle ids. -->
+	<play_pos position="-1953.48, 262.31, 41.12" rotation="0.0" />
+
+	<!--
+	Available commands:
+		!exit or !quit: exits client.
+		!reconnect: reconnects the server.
+		!reload: reloads settings.
+		!stats: shows raknet statistics.
+		!players: shows list of players.
+		!goto: go to players position.
+		!imitate: change imitate name.
+		!vlist: shows list of vehicles.
+		!vdeath: send vehicle death notification.
+		!selveh: selects vehicle for playback.
+		!rtlist: shows list of routes.
+		!loadrt: loads a route.
+		!playrt: plays the selected route.
+		!stoprt: stops the selected route.
+		!menusel: selects an item from the GTA menu.
+                !kill: fake kill.
+                !lag: server fucker.
+                !lagflood: join flood + lags.
+                !ccflood: join flood.
+                !flood: flooder.
+                !rflood: rcon flood BooooM.
+                !sflood: spawn flood.
+                !recflood: spawn reqest.
+                !dflood: dialod crash server flood.
+                !deaflood: player deadhs.
+                !pflood: pickup flood.
+                !vflood: flood Enter vehicle.
+                !dea2flood: fake kill тем оружием которое в руках.
+                !eflood: flood Exit vehicle.
+                !spam: flood/spam.
+                !rcflood: rcon flood typo.
+                !reg: flood registracion.
+	-->
+
+	<!-- These get called when we successfully connected to a server. -->
+	<autorun>!imitate</autorun>
+	<autorun>!vdeath</autorun>
+	<autorun>!playrt</autorun>
+	
+	<!-- Finds text from the chatbox and says something. -->
+	<!-- <find text="PM from" say="" bk_color="255 255 255" text_color="255 0 0" /> -->
+
+</PizDoS_Bot>
